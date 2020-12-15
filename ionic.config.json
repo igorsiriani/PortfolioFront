@@ -1,0 +1,7 @@
+{
+  "name": "Carteira",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
