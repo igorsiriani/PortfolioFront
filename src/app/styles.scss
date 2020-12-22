@@ -1,0 +1,42 @@
+.page-title {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.page-header{
+    --background: #004B7A;
+}
+
+.page-body {
+    --ion-background-color:#e6e6e6;
+}
+
+button > span.alert-button-inner {
+    color: #004B7A
+}
+
+.toast-failure {
+    --color: #4b4b4b;
+    --background: #F8A7A0;
+    --border-color: #85140A;
+    --border-radius: 10px;
+    --border-style: solid;
+    --border-width: 2px; 
+}
+
+.toast-success {
+    --color: #4b4b4b;
+    --background: #85FFC8;
+    --border-color: #00B865;
+    --border-radius: 10px;
+    --border-style: solid;
+    --border-width: 2px; 
+}
+
+.card-container {
+    max-width: 700px;
+    max-height: 360px;
+    margin: auto;
+}
+

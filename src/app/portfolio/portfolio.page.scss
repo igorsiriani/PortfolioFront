@@ -1,0 +1,84 @@
+.container {
+    margin-top: 15px;
+}
+
+.card-container {
+    padding: 0px 15px;
+    margin-bottom: 13px;
+}
+
+.card {
+    border: solid 1px #e4e4e4;
+    box-shadow: #cacaca 1px 1px 8px;
+    background-color: whitesmoke;
+}
+
+.table-header {
+    font-size: 0.8rem;
+    color: #4b4b4b;
+    background-color: #e0e0e0;
+}
+
+.table-row {
+    border-bottom: solid 1px #b3b3b3;
+    color: #5f5f5f;
+}
+
+.add-button {
+    font-size: 1.4rem;
+    color: #004B7A;
+    margin-top: 3px;
+}
+
+.red {
+    color: #ef2917;
+}
+
+.red::before {
+    content: "↓ ";
+}
+
+.green {
+    color: #008148;
+}
+
+.green::before {
+    content: "↑ ";
+}
+
+.empty-alert {
+    text-align: center;
+    color: #5f5f5f;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.empty-hide{
+    display: none;
+}
+
+.delete-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    --background: transparent !important;
+    --box-shadow: none;
+    --border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 40px;
+
+    fa-icon {
+        font-size: 0.8rem;
+        color: #5f5f5f
+    }
+
+    fa-icon:hover, fa-icon:active {
+        color: #ef2917
+    }
+}
+

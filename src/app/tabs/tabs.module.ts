@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+
 import { TabsPage } from './tabs.page';
 
 @NgModule({
@@ -12,6 +14,7 @@ import { TabsPage } from './tabs.page';
     IonicModule,
     CommonModule,
     FormsModule,
+    FontAwesomeModule,
     TabsPageRoutingModule
   ],
   declarations: [TabsPage]

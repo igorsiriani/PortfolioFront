@@ -1,0 +1,109 @@
+.container {
+    padding-top: 30px;
+    height: 100%;
+}
+
+.card-title {
+    margin-top: 15px;
+}
+
+.card {
+    border-radius: 15px 15px 0 0;
+    margin: 0px;
+    border: solid 1px #c7c7c7;
+    box-shadow: #aaaaaa 0 0 9px;
+    background-color: whitesmoke;
+    height: 100%;
+}
+
+.content-form {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.close-button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    --background: transparent !important;
+    --box-shadow: none;
+    --border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 40px;
+
+    fa-icon {
+        font-size: 1rem;
+        transform: rotate(45deg);
+        color: #EF8C1A
+    }
+}
+
+.form-input {
+    ion-label {
+        font-size: 0.9rem;
+    }
+    --background: whitesmoke;
+    --box-shadow: none;
+    margin-bottom: 20px;
+}
+
+.separator {
+    --background: whitesmoke;
+    --box-shadow: none;
+    height: 10px;
+    margin-bottom: 10px;
+    // border-bottom: solid 1px #004b7a6b; 
+}
+
+ion-item.item-has-focus {
+    --highlight-background: #EF8C1A;
+}
+
+ion-item.item-has-focus > ion-label{
+    color: #EF8C1A !important;
+}
+
+.form-add-button {
+    --background: whitesmoke;
+    --box-shadow: none;
+    --border-style: 0 !important;
+}
+
+.form-segment:last-child {
+    margin-top: -15px;
+}
+
+.form-segment {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sugestion {
+    position: absolute;
+    margin-top: -15px;
+}
+
+ion-card {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+ion-card-content {
+    overflow: hidden;
+    overflow-y: auto;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+}
+
+.save-button {
+    text-align:center;
+    font-size: 1rem;
+    color: #004b7a;
+    .button-native {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}

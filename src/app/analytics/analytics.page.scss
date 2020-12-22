@@ -1,0 +1,25 @@
+.container {
+    margin-top: 15px;
+}
+
+.card-container {
+    padding: 0px 15px;
+    margin-bottom: 13px;
+}
+
+.card {
+    border: solid 1px #e4e4e4;
+    box-shadow: #cacaca 1px 1px 8px;
+    background-color: whitesmoke;
+}
+
+.empty-alert {
+    text-align: center;
+    color: #5f5f5f;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

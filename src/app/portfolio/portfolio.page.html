@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="page-header">
+    <ion-title class="page-title">
+      Portfolio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="page-body">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Portfolio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    <div class="card-container" *ngFor="let card of cardList; let ind = index">
+      <ion-card class="card">
+        <ion-card-header>
+          <ion-card-title>{{card.name}}</ion-card-title>
+          <ion-card-subtitle>{{card.creationDate}}</ion-card-subtitle>
+          <ion-button (click)="presentAlertConfirm(card._id, ind)" class="delete-button">
+            <fa-icon icon="trash"></fa-icon>
+          </ion-button>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-grid>
+            <ion-row class="table-header">
+              <ion-col>Ticker</ion-col>
+              <ion-col>Qty</ion-col>
+              <ion-col>Price</ion-col>
+            </ion-row>
+            <ion-row class="table-row" *ngFor="let symbol of card.symbols; let i = index">
+              <ion-col>{{symbol}}</ion-col>
+              <ion-col>{{card.quantity[i]}}</ion-col>
+              <ion-col [ngClass]="{'red': card.currency[i].change < 0, 'green': card.currency[i].change > 0}" >{{card.currency[i].price}}</ion-col>
+            </ion-row>
+
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+  </div>
+
+  <div class="empty-alert" [ngClass]="{'empty-hide': cardList.length != 0}">
+    <span>This looks empty!</span>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="presentModal()">
+      <fa-icon icon="plus" class="add-button"></fa-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

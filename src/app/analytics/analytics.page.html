@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="page-header">
+    <ion-title class="page-title">
+      Analytics
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="page-body">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Analytics</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <div class="card-container" *ngFor="let card of cardList; let ind = index">
+      <ion-card class="card">
+        <ion-card-header>
+          <ion-card-title>{{card.name}}</ion-card-title>
+          <ion-card-subtitle>{{card.creationDate}}</ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <canvas baseChart [datasets]="card.data" [chartType]="chartType" [labels]="card.labels" [colors]="card.color"></canvas>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+
+</ion-content>
