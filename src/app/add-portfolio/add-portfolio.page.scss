@@ -1,6 +1,13 @@
 .container {
-    padding-top: 30px;
+    padding-top: 0px;
     height: 100%;
+}
+
+@media(max-width: 767px) {
+    .container {
+        padding-top: 70px;
+        height: 100%;
+    }
 }
 
 .card-title {
@@ -106,4 +113,12 @@ ion-card-content {
         padding-right: 30px;
         padding-left: 30px;
     }
+}
+
+ion-content{
+    --background: transparent;
+}
+
+.card-header {
+    margin-bottom: 10px;
 }

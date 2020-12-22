@@ -27,7 +27,8 @@ export class PortfolioPage {
 
   async presentModal() {
     const modal = await this.modalController.create({
-      component: AddPortfolioPage});
+      component: AddPortfolioPage
+    });
 
     return await modal.present();
   }
